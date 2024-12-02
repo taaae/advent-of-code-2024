@@ -1,13 +1,13 @@
 use advent_of_code_2024::get_input;
-use std::iter::zip;
 use std::collections::HashMap;
+use std::iter::zip;
 
 fn parse_input(input: String) -> (Vec<i32>, Vec<i32>) {
     let lines: Vec<&str> = input.split('\n').collect();
     let mut ids1 = Vec::new();
     let mut ids2 = Vec::new();
     for line in lines {
-        let mut line_split = line.split(' ').filter(|&s| s != "");
+        let mut line_split = line.split(' ').filter(|&s| !s.is_empty());
         ids1.push(line_split.next().unwrap().parse::<i32>().unwrap());
         ids2.push(line_split.next().unwrap().parse::<i32>().unwrap());
     }

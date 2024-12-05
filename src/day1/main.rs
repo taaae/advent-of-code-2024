@@ -56,7 +56,7 @@ mod tests {
     }
 
     #[test]
-    fn dat1_part2() {
+    fn day1_part2() {
         assert_eq!(solve_part2(get_example_input(1)), 31);
     }
 }

@@ -1,6 +1,16 @@
-use advent_of_code_2024::get_input;
+use advent_of_code_2024::{get_input, input_to_grid};
+use std::collections::HashMap;
 
 fn solve_part1(input: String) -> i32 {
+    let input = input_to_grid(input);
+    let antenas: HashMap<u8, Vec<(usize, usize)>> = HashMap::new();
+    for (x, v) in input.iter().enumerate() {
+        for (y, &c) in v.iter().enumerate() {
+            if c != b'.' {
+                antenas. 
+            }
+        }
+    }
     unimplemented!()
 }
 
@@ -20,7 +30,7 @@ mod tests {
 
     #[test]
     fn day8_part1() {
-        // assert_eq!(solve_part1(get_example_input(8)), 42);
+        assert_eq!(solve_part1(get_example_input(8)), 14);
     }
 
     #[test]

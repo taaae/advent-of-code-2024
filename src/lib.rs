@@ -17,6 +17,10 @@ pub fn parse_2d_arr(input: String) -> Vec<Vec<String>> {
         .collect()
 }
 
+pub fn input_to_grid(input: String) -> Vec<Vec<u8>> {
+    input.lines().map(|line| line.as_bytes().to_vec()).collect()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
